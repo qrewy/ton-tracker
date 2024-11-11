@@ -4,7 +4,6 @@ import { addWallet, removeWallet, getTrackedWallets } from './database.js';
 
 const bot = new TelegramBot(config.bot_token, { polling: true });
 
-// Обработка команды /add
 bot.onText(/\/add (.+)/, async (msg, match) => {
   const chatId = msg.chat.id;
   const walletAddress = match[1];
@@ -17,7 +16,6 @@ bot.onText(/\/add (.+)/, async (msg, match) => {
   }
 });
 
-// Обработка команды /remove
 bot.onText(/\/remove (.+)/, async (msg, match) => {
   const chatId = msg.chat.id;
   const walletAddress = match[1];
@@ -30,7 +28,6 @@ bot.onText(/\/remove (.+)/, async (msg, match) => {
   }
 });
 
-// Команда для показа списка отслеживаемых кошельков
 bot.onText(/\/list/, async (msg) => {
   const chatId = msg.chat.id;
 
