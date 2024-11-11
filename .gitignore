@@ -1,0 +1,60 @@
+# Node modules
+node_modules/
+test/
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Dependency directories
+jspm_packages/
+bower_components/
+
+# Build output directories
+dist/
+build/
+out/
+
+# Environment variable files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Optional npm cache directory
+.npm/
+
+# Parcel-bundler cache
+.cache/
+.parcel-cache/
+
+# IDE directories
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# Lock files (optional, if you prefer to not track them)
+package-lock.json
+yarn.lock
+
+# Coverage directory used by tools like jest
+coverage/
+
+# Generated files
+*.log
+*.bak
+
+# Miscellaneous
+*.log
+*.bak
+*.tmp
